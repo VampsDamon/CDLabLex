@@ -3,9 +3,8 @@
  int v=0,c=0;
 %}
 %%
-[ \t\n]+;
 [aeiouAEIOU] {v++;}
-[^aeiouAEIOU] {c++;}
+[a-zA-Z] {c++;}
 %%
 int main(){
   printf("LEX Program to recognize and display the number of vowels and consonants\n");
